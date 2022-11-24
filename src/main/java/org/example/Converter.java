@@ -18,7 +18,7 @@ public class Converter {
                 throw new RuntimeException("Null id in TreeEntity with name - " + entity.getName());
             }
             if (idTreeDTOMap.containsKey(entity.getId())) {
-                throw new RuntimeException("There are more than one node with id - " + entity.getParentId());
+                throw new RuntimeException("There are more than one node with id - " + entity.getId());
             }
 
             TreeDTO treeDTO = new TreeDTO(entity.getId(), entity.getName());
